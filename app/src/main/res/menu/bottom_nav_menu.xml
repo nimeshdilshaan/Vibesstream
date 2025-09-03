@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/trend"
+        android:icon="@drawable/baseline_trending_down_24"
+        android:title="Trend" />
+
+    <item
+        android:id="@+id/mood"
+        android:icon="@drawable/baseline_mood_24"
+        android:title="Mood" />
+
+    <item
+        android:id="@+id/sport"
+        android:icon="@drawable/baseline_sports_soccer_24"
+        android:title="Sport" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_supervised_user_circle_24"
+        android:title="Profile" />
+
+</menu>

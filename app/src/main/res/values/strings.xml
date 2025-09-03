@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VibeStream</string>
+    <string name="trend">Trending</string>
+    <string name="label_Number2">Number 02</string>
+    <string name="edt_Number1">23</string>
+    <string name="edt_Number2">12</string>
+    <string name="btn_Plus">+</string>
+    <string name="btn_Minus">-</string>
+    <string name="btn_Multiply">x</string>
+    <string name="btn_Divide">/</string>
+    <string name="title_activity_play">playActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="album_art">Album Art</string>
+    <string name="play">▶ Play</string>
+    <string name="pause">⏸ Pause</string>
+    <string name="mood">Set the Rhythem of Soul</string>
+    <string name="game">Set Your Game Mode</string>
+
+
+</resources>

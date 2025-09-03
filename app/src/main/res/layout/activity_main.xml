@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="277dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text=" Popular Playlist"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text=" Top Artist"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <!--Navigation Bar-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <Button
+        android:id="@+id/newbtn"
+        android:layout_width="73dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/allbtn"
+        android:text="New"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/all"
+        android:layout_width="66dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:text="All"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView3"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/all"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circular"
+
+        app:srcCompat="@drawable/usrme" />
+
+    <ImageView
+        android:id="@+id/searchimg"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <!--Genre-->
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="185dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/orange"
+        android:text=" 2025 New"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="185dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/drkblue"
+        android:text="Best 2025"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="185dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/purple"
+        android:text="Phonk"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="185dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/red"
+        android:text="Afro Music"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="185dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/skyblue"
+        android:text="Car Music"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="185dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/green"
+        android:text="Techno"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <!--Rounded Images-->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView5"
+        android:layout_width="93dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="380dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/p1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundSquare" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView10"
+        android:layout_width="93dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="380dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/p2"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundSquare" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView11"
+        android:layout_width="93dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="380dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/p4"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundSquare" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView12"
+        android:layout_width="93dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="380dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/p3"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundSquare" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView6"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/b3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView16"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button8"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/b1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView17"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/b4" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView18"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toTopOf="@+id/button10"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/b6" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView14"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/b5" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView15"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button7"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:srcCompat="@drawable/b2" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_marginTop="4dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView23"
+                android:layout_width="108dp"
+                android:layout_height="103dp"
+                android:layout_margin="8dp"
+                android:contentDescription="artist_1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/raveen"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView22"
+                android:layout_width="108dp"
+                android:layout_height="103dp"
+                android:layout_margin="8dp"
+                android:contentDescription="artist_2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a1"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView9"
+                android:layout_width="108dp"
+                android:layout_height="103dp"
+                android:layout_margin="8dp"
+                android:contentDescription="artist_3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a2"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView8"
+                android:layout_width="108dp"
+                android:layout_height="103dp"
+                android:layout_margin="8dp"
+                android:contentDescription="artist_4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a3"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView7"
+                android:layout_width="108dp"
+                android:layout_height="103dp"
+                android:layout_margin="8dp"
+                android:contentDescription="artist_5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mihiran"
+                app:shapeAppearanceOverlay="@style/circular" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

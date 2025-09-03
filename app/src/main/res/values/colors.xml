@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bgcolor">#110B31</color>
+    <color name="allbtn">#565151</color>
+    <color name="orange">#96642E</color>
+    <color name="drkblue">#002E4A</color>
+    <color name="skyblue">#257FBF</color>
+    <color name="purple">#9C27B0</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#360005</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="search">#403468</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="gray_300">#FFE0E0E0</color>
+    <color name="gray_600">#FF757575</color>
+
+</resources>

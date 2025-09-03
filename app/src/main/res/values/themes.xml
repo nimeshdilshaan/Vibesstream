@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.VibeStream" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <!-- Normal app theme -->
+    <style name="Theme.VibeStream" parent="Base.Theme.VibeStream">
+        <!-- Keep the same background as splash to avoid white flash -->
+        <item name="android:windowBackground">@color/bgcolor</item>
+    </style>
+
+    <!-- Splash theme for API < 31 -->
+    <style name="Theme.VibeStream.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bgcolor</item>
+    </style>
+    <style name="Theme.VibeStream.Fullscreen" parent="Theme.VibeStream">
+        <item name="android:actionBarStyle">@style/Widget.Theme.VibeStream.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.VibeStream.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>
