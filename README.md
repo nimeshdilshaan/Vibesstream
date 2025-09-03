@@ -58,11 +58,11 @@ The app offers **personalized browsing, mood-based music selection, and sports p
 ### 👤 Profile Screen
 <img src="screenshots/Profile.png" alt="Profile Screen" width="300"/>
 
-*(Add your screenshots inside a `screenshots/` folder and they will show here)*  
+ 
 
 ---
 
 ## 🔧 Installation & Setup  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/<your-username>/Vibestream.git
+   git clone https://github.com/nimeshdilshaan/Vibestream.git
